@@ -20,8 +20,8 @@ public class Card {
 	 */
 	private int pointValue;
 
-
-   /**
+   /**  
+    * 
 	 * Creates a new <code>Card</code> instance.
 	 *
 	 * @param cardRank  a <code>String</code> value
@@ -34,6 +34,9 @@ public class Card {
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 	}
+        String cardSuit = suit;
+        String cardRank = rank;
+        int cardPointValue = pointValue;
 
 
 	/**
@@ -42,14 +45,17 @@ public class Card {
 	 */
 	public String suit() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-   }
-
+   
+            return this.suit + " Suit ";
+}
 	/**
 	 * Accesses this <code>Card's</code> rank.
 	 * @return this <code>Card's</code> rank.
 	 */
 	public String rank() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+                
+            return this.rank + " Rank ";        
 	}
 
    /**
@@ -58,6 +64,7 @@ public class Card {
 	 */
 	public int pointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+            return this.pointValue + " Point Value ";        
 	}
 
 	/** Compare this card with the argument.
