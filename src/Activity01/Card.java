@@ -62,7 +62,7 @@ public class Card {
 	 * Accesses this <code>Card's</code> point value.
 	 * @return this <code>Card's</code> point value.
 	 */
-	public String pointValue() {
+	public int pointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
             return this.pointValue;        
 	}
@@ -76,8 +76,9 @@ public class Card {
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
                 boolean boo = false;
-                String other = otherCard;
-                if(this.rank == other.rank && this.suit == other.suit)
+                String otherRank = otherCard.rank();
+                String otherSuit = otherCard.suit();
+                if(this.rank == otherRank && this.suit == otherSuit)
                     boo = true;
                 return boo;
 	}
