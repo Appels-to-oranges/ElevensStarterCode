@@ -78,7 +78,8 @@ public class Card {
                 boolean boo = false;
                 String otherRank = otherCard.rank();
                 String otherSuit = otherCard.suit();
-                if(this.rank == otherRank && this.suit == otherSuit)
+                int otherPoint = otherCard.pointValue();
+                if(this.rank == otherRank && this.suit == otherSuit && otherPoint == this.pointValue)
                     boo = true;
                 return boo;
 	}
@@ -96,6 +97,8 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-                return rank() + " " + suit();
+            String str = "Rank is " + this.rank() + " Suit is " + this.suit; 
+            return str; 
+
 	}
 }
